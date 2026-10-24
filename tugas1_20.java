@@ -24,7 +24,7 @@ public class tugas1_20 {
             if (jumlahTiket > 10) {
                 double totalHarga = jumlahTiket * hargaTiket * 0.85;
                 System.out.println("Total harga dengan diskon 15%: Rp " + totalHarga);
-            } else if (jumlahTiket > 4) {
+            } else if (jumlahTiket > 4 && <= 10) {
                 double totalHarga = jumlahTiket * hargaTiket * 0.9;
                 System.out.println("Total harga dengan diskon 10%: Rp " + totalHarga);
             } else {
