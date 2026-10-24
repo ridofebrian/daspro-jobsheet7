@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class SiakadWhile20 {
     public static void main(String[] args) {
-        try (Scanner sc = new Scanner(System.in)) {
+        Scanner sc = new Scanner(System.in);
         int nilai,jml,i;
         i= 0;
         System.out.print("Masukkan jumlah mahasiswa: ");
@@ -33,11 +33,8 @@ public class SiakadWhile20 {
             } else {
                 System.out.println("Nilai mahasiswa ke-" + (i + 1) + " adalah E");
             }
-            i++;    
-            
-        }
-
+            i++;
         }
     }
-        }
+}
 

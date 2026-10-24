@@ -2,12 +2,12 @@ import java.util.Scanner;
 
 public class KafeDoWhile20 {
     public static void main(String[] args) {
-        try (Scanner sc = new Scanner(System.in)) {
-            int kopi,teh,roti,totalHarga;
-            String namaPelanggan;
-            int hargaKopi = 12000;
-            int hargaTeh = 7000;
-            int hargaRoti = 2000;
+        Scanner sc = new Scanner(System.in);
+        int kopi,teh,roti,totalHarga;
+        String namaPelanggan;
+        int hargaKopi = 12000;
+        int hargaTeh = 7000;
+        int hargaRoti = 2000;
 
             do {
                 System.out.print("Masukkan nama pelanggan (ketik 'batal' untuk berhenti): ");
@@ -28,8 +28,8 @@ public class KafeDoWhile20 {
                 System.out.println("Total yang harus dibayar Rp " + totalHarga);
                 sc.nextLine();
             } while (true);
+            sc.close();
             System.out.println("semua transaksi selesai, terima kasih");
 
         }
     }
-}
